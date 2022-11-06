@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About me</title>
+</head>
+<body>
+        <div class="animation">
+            <span class="first">Hello</span>
+            <span class="slide">
+                <span class="second">World</span>
+            </span>
+        </div>
+        <div class="text">My name is Elena Barlow</div>
+        
+        <div class="about">
+            <p>
+              I am a web developer from Brighton, England temporarily living in Alexandria, Egypt.
+            </p>
+            <p>I have experience with HTML, CSS Javascript, React, SASS, Bootstrap, Wordpress and FTP.</p>
+            <p>I have experience working as a freelancer, please see my CV or contact me for more info.</p>
+            <br>
+            <a href="index.html" class="neon-button">Back</button>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script>
+        const text = baffle(".text");
+        
+        text.set({
+            character: '',
+            speed: 100
+
+        }); 
+        text.start();
+        text.reveal(6000, 2300);
+    </script>
+</body>
+</html>
